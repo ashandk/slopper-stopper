@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Slopper Stopper",
+  "version": "1.6",
+  "description": "Highlights AI-sounding words and phrases in green on any web page.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["highlight.css"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}

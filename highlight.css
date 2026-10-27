@@ -1,0 +1,12 @@
+/* See-through greens, so they read as light green on white pages and stay
+   readable on dark ones. The last number sets the strength.
+   Strong tells: */
+::highlight(slopper-stopper) {
+  background-color: rgba(34, 197, 94, 0.32);
+}
+
+/* Everyday words that are also on the AI lists. Set this to 0.32 as well if
+   you want every word the same green. */
+::highlight(slopper-stopper-soft) {
+  background-color: rgba(34, 197, 94, 0.14);
+}
